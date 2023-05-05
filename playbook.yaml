@@ -1,0 +1,8 @@
+- name: Microk8s install play
+  hosts: linodes
+  tasks:
+    - name: Install microk8s
+      snap:
+        name: microk8s
+        state: present
+        classic: yes
